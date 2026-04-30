@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '@/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'CaseBridge – Система команд',
-  description: 'Платформа для верификации опыта джуниоров и командной работы',
+  description: 'Платформа для верифицированного опыта джуниоров и командной работы',
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className="bg-neutral-950 text-gray-200 min-h-screen">
+      <body className="bg-neutral-950 text-gray-200 min-h-screen antialiased">
         {children}
       </body>
     </html>
